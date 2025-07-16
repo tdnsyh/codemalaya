@@ -1,0 +1,21 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav-link.active .card {
+  border: 1px solid #0d6efd;
+  background-color: #e7f1ff;
+}
+
+@media (max-width: 767.98px) {
+    .sticky-mobile-fix {
+        position: static !important;
+        height: auto !important;
+    }
+
+    .scrollable-mobile-fix {
+        overflow-y: visible !important;
+    }
+}
