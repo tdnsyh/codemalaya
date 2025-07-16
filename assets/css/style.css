@@ -19,3 +19,34 @@ body {
         overflow-y: visible !important;
     }
 }
+
+  .border-grid .col {
+    border: 1px solid #dee2e6; /* Warna border Bootstrap */
+  }
+
+  .border-grid {
+    border-left: 0;
+    border-top: 0;
+  }
+
+  .border-grid .col {
+    border-left: 0;
+    border-top: 0;
+  }
+
+  @media (min-width: 768px) {
+    .border-grid .col:nth-child(3n+1) {
+      border-left: 0; /* kolom pertama di setiap baris */
+    }
+
+    .border-grid .col:nth-child(-n+3) {
+      border-top: 0; /* baris pertama */
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .border-grid .col {
+      border-left: 0;
+      border-top: 0;
+    }
+  }
